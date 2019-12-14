@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "name your extension",
+  "version": "1.0.0",
+  "description": "",
+  "homepage_url": "https://milanmilosev.com",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html",
+    "default_title": "myExtension"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": false,
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": []
+}
